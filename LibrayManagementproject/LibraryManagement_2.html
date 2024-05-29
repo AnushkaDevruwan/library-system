@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Library Management System</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        .background-image {
+            background-image: url('libray.png'); 
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .login-form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            width: 300px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 1em;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 0.75em;
+            margin-top: 1em;
+            border: none;
+            border-radius: 4px;
+            background: #007BFF;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: #0056b3;
+        }
+
+  
+        .forgot-password {
+            margin-top: 1em;
+            display: inline-block;
+            color: white; 
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+            color: #f0f0f0; 
+        }
+
+        .Homemain {
+            margin-top: 1em;
+            display: inline-block;
+            color: white; 
+            text-decoration: none;
+        }
+
+        .Homemain:hover {
+            text-decoration: underline;
+            color: #f0f0f0; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <form class="login-form" action="/login" method="post">
+            <h2>Welcome Back</h2>
+            <label for="username">Username or Email:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+            <a href="LibraryManagement_3.html" class="forgot-password">Forgot Password?</a>
+            <a href="LibraryManagement_4.html" class="Homemain">HomeMain</a>
+        </form>
+    </div>
+</body>
+</html>

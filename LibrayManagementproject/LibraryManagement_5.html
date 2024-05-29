@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .search-container {
+            display: flex;
+            justify-content: center;        /* Centers items horizontally */
+            align-items: flex-start;        /* Aligns items at the top */
+            height: 100%;                   /* Sets the height to 100% of the parent container */
+            text-align: center;             /* Centers text within each flex item */
+            color: white;                   /* Sets the text color to white */
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .parent {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            background-color: blue;         /* Background color of the button */
+            color: white;                   /* Text color of the button */
+            padding: 10px 20px;             /* Padding inside the button */
+            border: none;                   /* Removes the default border */
+            border-radius: 5px;             /* Rounds the corners of the button */
+            cursor: pointer;                /* Changes cursor to pointer on hover */
+        }
+        button:hover {
+            background-color: darkblue;     /* Changes the background color on hover */
+        }
+    </style>
+    <title>Submit Button Example</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="search-container">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
